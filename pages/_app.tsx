@@ -118,20 +118,10 @@ const customChains: Chain[] = [
       }
     ]
   },
-  staking: {
-    staking_tokens: [
-      {
-        denom: "uluna"
-      }
-    ]
-  },
   codebase: {
     git_repo: "https://github.com/terra-money/core/",
     recommended_version: "v2.3.1",
-    compatible_versions: [
-      "v2.3.0",
-      "v2.3.1"
-    ],
+    compatible_versions: ["v2.3.1"],
     cosmos_sdk_version: "0.46.9",
     cosmwasm_enabled: true,
     cosmwasm_version: "0.30.0",
@@ -140,41 +130,9 @@ const customChains: Chain[] = [
       name: "v2.0",
       genesis_url: "https://tfl-phoenix-1.s3.amazonaws.com/genesis.json"
     },
-    versions: [
-      {
-        name: "v2.3",
-        tag: "v2.3.1",
-        height: 4711800,
-        recommended_version: "v2.3.1",
-        compatible_versions: [
-          "v2.3.0",
-          "v2.3.1"
-        ],
-        cosmos_sdk_version: "0.46.9",
-        cosmwasm_enabled: true,
-        cosmwasm_version: "0.30.0",
-        ibc_go_version: "6.1.0",
-      }
-    ]
-  },
-  logo_URIs: {
-    png: "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png",
-    svg: "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg"
- 
   },
   peers: {
-    seeds: [
-      {
-        id: "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0",
-        address: "seeds.polkachu.com:11756",
-        provider: "Polkachu"
-      },
-      {
-        id: "a8d12536bdcc210ac35a9f092f3295360b97830d",
-        address: "seed-terra-01.stakeflow.io:33007",
-        provider: "Genesis Lab"
-      }
-    ],
+    seeds: [],
     persistent_peers: [
       {
         id: "0f1096278efafcf3f0d3bd5b6544e6b8dcc36a0e",
@@ -213,8 +171,7 @@ const customChains: Chain[] = [
       {
         address: "https://rpc-terra2.whispernode.com:443",
         provider: "WhisperNode"
-      },
-      
+      }, 
     ],
     rest: [
       {
