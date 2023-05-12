@@ -161,6 +161,10 @@ const customChains: Chain[] = [
   apis: {
     rpc: [
       {
+        address: "https://rpc-terra2.whispernode.com:443",
+        provider: "WhisperNode"
+      }, 
+      {
         address: "https://terra-rpc.polkachu.com",
         provider: "polkachu"
       },
@@ -168,10 +172,7 @@ const customChains: Chain[] = [
         address: "https://terra-rpc.stakely.io:443/",
         provider: "stakely"
       },
-      {
-        address: "https://rpc-terra2.whispernode.com:443",
-        provider: "WhisperNode"
-      }, 
+
     ],
     rest: [
       {
