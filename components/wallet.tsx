@@ -67,7 +67,7 @@ export const WalletSection = (
       onChange={onChainChange}
     />
   );
-
+  console.log(chooseChain)
   return (
     <Center py={6}>
       <Grid
