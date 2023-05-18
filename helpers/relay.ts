@@ -33,11 +33,11 @@ export async function relay(
   if (initHeightA == undefined) {
     const abciA = await tmA.abciInfo();
     console.table(abciA);
-    initHeightA = abciA.lastBlockHeight! - 50_000;
+    initHeightA = abciA.lastBlockHeight! - 500;
   }
   if (initHeightB == undefined) {
     const abciB = await tmB.abciInfo();
-    initHeightB = abciB.lastBlockHeight! - 50_000;
+    initHeightB = abciB.lastBlockHeight! - 500;
   }
   const link = await IbcLink.createWithExistingConnections(
     await IbcClient.connectWithSigner(rpcA, offlineSignerA, addrA, {
